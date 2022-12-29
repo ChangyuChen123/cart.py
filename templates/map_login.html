@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>埔里美食地圖 - 管理介面</title>
+    {% load static %}
+    <link href="{% static "css/map_style.css" %}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div id="wrap">
+    <div id="header">
+    <div align="center" id="logo"><img src='{% static "images/foodmap.png" %}' width="190" " alt="logo"></div>
+    </div>
+    <div id="content">
+      <div>
+        <form action="" method="post">
+          {% csrf_token %}
+          <table border="0" align="center" cellpadding="10" cellspacing="0">
+            <tr>
+              <td width="20%" align="right" valign="baseline">帳號</td>
+              <td valign="baseline"><input type="text" name="username" id="username" style="width:200px" required /></td>
+            </tr>
+            <tr>
+              <td align="right" valign="baseline">密碼</td>
+              <td valign="baseline"><input type="password" name="password" id="password" style="width:200px" required /></td>
+            </tr>
+            <tr>
+            <tr>
+              <td colspan="2" align="center" valign="baseline"><input type="submit" name="button" id="button" value="登入管理" />
+              <input type="button" name="button2" id="button2" value="回上一頁" onclick="window.open('/map_index');" /></td>
+            </tr>
+            </tr>
+          </table>
+          <span style="color:red; margin-left: 250px;">{{message}}</span>
+        </form>
+      </div>
+    </div>
+    <div align="center" id="footer">
+      <strong>二林美食地圖</strong> &nbsp; &copy; Herman 地圖
+    </div></div>
+  </body>
+</html>

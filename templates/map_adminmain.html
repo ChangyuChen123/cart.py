@@ -1,0 +1,55 @@
+{% extends "map_base.html" %}
+{% load static %}
+
+{% block script %}
+    <script type="text/javascript">
+      function confirmLink(message) {
+      	if(message == "") message = "確定";
+      	document.returnValue = confirm(message);
+      }
+    </script>
+{% endblock %}
+
+{% block content %}
+      <tr>
+        <td><a href="/map_logout/">登出管理</a>
+        &nbsp;|&nbsp;&nbsp;<a href="/map_adminadd/">新增景點</a></td>
+      </tr>
+    </table>
+    <table width="98%" align="center" class="maptable">
+      <tr>
+        <th>景點名稱</th>
+        <th>經緯度</th>
+        <th>電話</th>
+        <th>地址</th>
+        <th>管理</th>
+      </tr>
+      {% for item in maps %}
+        <tr class="alt">
+          <td align="center">{{item.mapName}}</td>
+          <td align="center">{{item.mapLat}},{{item.mapLng}}</td>
+          <td align="center">{{item.mapTel}}</td>
+          <td align="center">{{item.mapAddr}}</td>
+          <td align="center"><a href="/map_adminedit/{{item.id}}/">編輯</a>
+            <a href="/map_admindelete?id={{item.id}}" onclick="confirmLink('確定要刪除這個景點？'); return document.returnValue">刪除</a></td>
+        </tr>
+        </tr>
+      {% endfor %}
+    </table>
+    <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr valign="bottom">
+        <td align="left">
+          頁數： {{maps.number}} / {{maps.paginator.num_pages}}
+        </td>
+          <td align="right">
+          {% if maps.has_previous %}
+            <a href="?page={{maps.previous_page_number}}">上一頁</a>
+          {% endif %}    
+          {% if maps.has_next %}
+            <a href="?page={{maps.next_page_number}}">下一頁</a>
+          {% endif %}
+        </td>
+      </tr>
+    </table>
+  </div>
+{% endblock %}

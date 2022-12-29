@@ -1,0 +1,33 @@
+{% extends "album_base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="subjectDiv"> 網路相簿管理登入 </div>             
+    <div class="albumdesc">
+      <form action="." id="form1" name="form1" method="POST">
+        {% csrf_token %}
+        <table border="0" align="center" cellpadding="4" cellspacing="0">
+          <tr>
+            <th align="right" valign="baseline">帳號</th>
+            <td valign="baseline">{{postform.username}}</td>
+          </tr>
+          <tr>
+            <th align="right" valign="baseline">密碼</th>
+            <td valign="baseline">{{postform.pd}}</td>
+          </tr>
+          <tr>
+            <th align="right" valign="baseline">驗證碼</th>
+            <td valign="baseline">{{postform.captcha}}</td>
+          </tr>
+
+
+          <tr>
+            <td colspan="2" align="center"><p>
+              <input type="submit" name="button" id="button" value="登入管理" />
+              <input type="button" name="button2" id="button2" value="回上一頁" onClick="window.history.back();" />
+              </p></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+{% endblock %}

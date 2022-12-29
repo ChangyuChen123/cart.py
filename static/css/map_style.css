@@ -1,0 +1,149 @@
+@charset "utf-8";
+html {
+	height: 100%;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #CCC;
+	height: 90%;
+	min-height: 200px;
+	color: #5F4C3E;
+	font-size: 11pt;
+}
+a {
+	color: #930;
+	text-decoration: none;
+}
+a:hover {
+	color: #F90;
+}
+
+#wrap {
+	width: 900px;
+	margin: 0px auto;
+	height: 100%;
+}
+#header {
+	height: 165px;
+	width: 100%;
+	background-image: url(images/pulifoodmap_r1_c1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	position: relative;
+}
+#content  {
+	background-image: url(images/pulifoodmap_r3_c1.png);
+	padding: 20px;
+	/* [disabled]height: 100%; */
+}
+#footer  {
+	background-image: url(images/pulifoodmap_r5_c1.png);
+	height: 25px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9.5pt;
+	width: 100%;
+}
+#map_div {
+	height: 400px;
+	width: 840px;
+	border: 10px solid #FFF;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px #CCC;
+}
+#logo {
+	/* [disabled]position: absolute; */
+	width: 157px;
+	height: 143px;
+	/* [disabled]z-index: 1; */
+	top: 16px;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+
+.markdiv {
+	font-size: 10pt;
+	line-height: 120%;
+}
+.marktitle {
+	font-size: 12pt;
+	font-weight: bolder;
+	margin-bottom:10px;
+}
+.markdiv img {
+	display:block;
+	width:250px;
+	border: 5px solid #CCC;
+	margin: 5px auto 0px auto;
+	clear:both;
+}
+.contactinfo {
+	color:#C60;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+.hr_div {
+	clear: both;
+}
+/* Table Styles */
+.maptable {border-collapse: collapse;}
+.maptable th,td {padding: 8px;}
+.maptable tr.alt td {
+	background : url(images/dot.gif) repeat-x bottom;
+}
+.maptable tr.alt:hover td {
+	background: #ECE7DD url(images/dot.gif) repeat-x bottom;
+	cursor: pointer;
+}
+.maptable th {
+	background: #D6CAB3 url(images/bg_th.png) repeat-x top;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 15px;
+}
+.maptable tr td a {
+text-decoration: none;
+font-weight: bold;
+color: #06F;
+}
+.maptable tr td a:hover { color:#F60;}
+.datatable {
+	border-collapse: collapse;
+	margin-left: 20px;
+	float: left;
+	}
+.datatable th,td {padding: 8px;}
+#smap_div {
+	height: 320px;
+	border: 10px solid #FFF;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px #CCC;
+	float: left;
+	width: 45%;
+	margin-left: 30px;
+}
+/* Table Styles */
+.smaptable {
+	border-collapse: collapse;
+	margin-left: 20px;
+	float: left;
+	width: 45%;
+}
+.smaptable th,td {padding: 8px;}
+.smaptable tr.alt td {
+	background : url(images/dot.gif) repeat-x bottom;
+}
+.smaptable th {
+	background: #D6CAB3 url(images/bg_th.png) repeat-x top;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 15px;
+}

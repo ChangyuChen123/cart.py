@@ -1,0 +1,560 @@
+@charset "utf-8";
+body {
+	background-color: #666;
+}
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+#warp {
+	width: 950px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+#warp #content {
+	background-color: #EEE;
+	padding: 10px;
+}
+#warp #content #sidediv {
+	clear: right;
+	float: right;
+	width: 199px;
+	margin-top: 10px;
+	padding: 10px;
+}
+#warp #content #sidediv .sidemenu {
+	border-radius: 20px 0px 20px 0px;
+	color: #FFF;
+	background-color: #666;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+#warp #content #maindiv {
+	width: 690px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#warp #content .gridlist {
+	width: 700px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+}
+.block_product {
+	float: left;
+	height: 260px;
+	width: 160px;
+	background-color: #FFFFFF;
+	border-radius: 0px 20px 0px 20px;
+	border: 1px solid #CCC;
+	/* [disabled]margin-top: 10px; */
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-transition: background-color 10ms ease 0s;
+	-moz-transition: background-color 10ms ease 0s;
+	-ms-transition: background-color 10ms ease 0s;
+	-o-transition: background-color 10ms ease 0s;
+	transition: background-color 10ms ease 0s;
+}
+.block_product:hover {
+	background-color: #CCC;
+}
+.block_product .pro_photo {
+	height: 135px;
+	width: 135px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	-webkit-transition: color;
+	-moz-transition: color;
+	-ms-transition: color;
+	-o-transition: color;
+	transition: color;
+}
+.block_product .pro_photo .pro_name {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10pt;
+	font-weight: bolder;
+	color: #666;
+	height: 3.2em;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+.block_product .pro_photo .pro_price {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #F00;
+	text-align: center;
+}
+.block_product .pro_photo .pro_btn {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.nav_bar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 120%;
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#form1 {
+	margin: 0px;
+}
+#form1 th {
+	color: #FFF;
+	background-color: #999;
+}
+.title {
+	color: #000;
+	background-color: #F90;
+	display: block;
+	padding: 5px;
+	width: 120px;
+	text-align: center;
+	text-shadow: 1px 1px #CCC;
+	font-weight: bold;
+}
+
+.desc {
+	font-size: 11pt;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 1em;
+	line-height: 150%;
+}
+.sprice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: bolder;
+	color: #F00;
+}
+a.delcart {
+	color: #F00;
+	background-image: url(images/cross.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	padding-left: 16px;
+	text-decoration: none;
+}
+#warp #header {
+	background-image: url(images/cartTop.png);
+	height: 215px;
+	width: 950px;
+}
+#warp #header .logo {
+	background-image: url(images/logo.png);
+	height: 49px;
+	width: 272px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#warp #footer {
+	background-image: url(images/cartbot.png);
+	height: 48px;
+	width: 950px;
+}
+#sidediv ul {
+	list-style-type: none;
+	list-style-image: url(images/icon_red.gif);
+	line-height: 150%;
+}
+.message {
+	width: 90%;
+	color: #069;
+	background-color: #FCC;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px;
+	background-image: url(images/icon_warning.png);
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+.nav_bar a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11pt;
+	color: #F60;
+	background-image: url(images/icon_red.gif);
+	display: block;
+	background-repeat: no-repeat;
+	width: 80px;
+	background-position: left center;
+	text-indent: 20px;
+	float: left;
+}
+.subject {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #060;
+	margin-bottom: 10px;
+	background-image: url(images/icon_green.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+}
+
+#留言板
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border: none;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg.gif);
+}
+
+form {
+	margin: 0px;
+}
+
+#warp {
+	display: table;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+
+#masterDiv {
+	height: 40px;
+	width: 440px;
+	margin-top: 75px;
+	margin-left: 34px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+	color: #960;
+}
+
+#postDiv {
+	padding: 10px;
+	margin-left: 80px;
+	margin-top: 40px;
+	font-size: 10pt;
+	line-height: 120%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#siteinfo {
+	font-size: 12px;
+	text-align: center;
+	color: #333;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 120%;
+	margin: 10px 10px 30px 10px;
+	text-shadow: 1px 0px #999;
+}
+
+.contentDiv {
+	float: left;
+	width: 450px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+.contentDiv .board_title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 28px;
+	font-weight: bold;
+	color: #993366;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.contentDiv p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 150%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.contentDiv .editor {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 120%;
+	font-weight: bold;
+	color: #993366;
+	text-align: right;
+	background-color: #EAF8AB;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentDiv .editor a {
+	color: #063;
+	text-decoration: none;
+}
+
+.contentDiv .responseDiv {
+	color: #F33;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+.functionDiv {
+	font-size: 10pt;
+	line-height: 16px;
+	color: #666;
+}
+
+.functionDiv a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666;
+}
+
+.functionDiv a:hover {
+	color: #F30;
+}
+
+.messageDiv {
+	font-size: 12pt;
+	color: #900;
+	text-align: center;
+	margin: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.floorDiv {
+	width: 48px;
+	padding-right: 20px;
+	float: left;
+	height: 64px;
+	padding-left: 6px;
+}
+
+.floorDiv a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+	text-align:center;
+	width: 66px;
+	margin:2px auto;
+	padding-top:10px;
+	display: block;
+}
+
+.pagebutton {
+	height: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#網路相簿
+
+@charset "utf-8";
+#mainRegion {
+
+}
+#mainRegion p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 20px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#mainRegion form {
+	margin: 0px;
+}
+
+#mainRegion .postname {
+	font-size: 9pt;
+	font-weight: bold;
+	color: #0066CC;
+}
+
+#mainRegion .heading {
+	font-family: "微軟正黑體";
+	font-size: 13pt;
+	color: #FF6600;
+	line-height: 150%;
+	font-weight: normal;
+}
+#mainRegion .smalltext {
+	font-size: 11px;
+	color: #999999;
+	vertical-align: middle;
+}
+#mainRegion .actionDiv {
+	float: right;
+	margin-top: -30px;
+	font-size: 11pt;
+	font-family: "微軟正黑體";
+}
+.titleDiv {
+	padding-left: 288px;
+	padding-top: 55px;
+	font-family: "微軟正黑體";
+	font-size: 24pt;
+	font-weight: bolder;
+	color: #FF3300;
+}
+.menulink {
+	float: right;
+	margin-top: -48px;
+	margin-right: 20px;
+	font-family: "微軟正黑體";
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#mainRegion .actionDiv a:hover {
+	color: #FFFFFF;
+	background-color: #CC0000;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #0066CC;
+}
+a:visited {
+	color: #0066CC;
+}
+a:hover {
+	color: #FF0000;
+}
+.itemheading {
+	font-family: "微軟正黑體";
+	font-size: 11pt;
+	color: #CC0000;
+	font-weight: bolder;
+}
+.trademark {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #0099FF;
+}
+#mainRegion .picDiv {
+	padding: 10px;
+	background-color: #CCCCCC;
+	height: 120px;
+	width: 120px;
+	border: 1px solid #999999;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+}
+#mainRegion .albumDiv {
+	float: left;
+	height: 210px;
+	width: 150px;
+	text-align: center;
+	margin-right: 22px;
+	margin-bottom: 5px;
+}
+#mainRegion .albumDiv .albuminfo {
+	font-family: "微軟正黑體";
+	font-size: 11pt;
+}
+#mainRegion .navDiv {
+	clear: both;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9pt;
+	padding: 5px;
+}
+#mainRegion .navDiv table {
+	font-size: 9pt;
+}
+
+#mainRegion .normalDiv {
+	clear: both;
+	margin: 5px;
+}
+#mainRegion .subjectDiv {
+	font-family: "微軟正黑體";
+	font-size: 14pt;
+	font-weight: bold;
+	color: #996600;
+	padding: 5px;
+	clear: both;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #666666;
+	margin-bottom: 5px;
+}
+#mainRegion .photoDiv {
+	text-align: center;
+	padding: 10px;
+}
+.clear {
+	clear: both;
+}
+.messageDiv {
+	font-size: 12pt;
+	color: #F00;
+	text-align: center;
+	padding: 5px;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	clear: both;
+}
+
+#introduction
+
+.icon-list li::before {
+  display: block;
+  flex-shrink: 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: .5rem;
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") no-repeat center center / 100% auto;
+}
